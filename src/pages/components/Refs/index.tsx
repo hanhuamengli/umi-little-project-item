@@ -1,4 +1,5 @@
 import React from 'react';
+import { unmountComponentAtNode } from 'react-dom';
 //import Styles from './index.less';
 
 class Refs extends React.Component{
@@ -12,7 +13,7 @@ class Refs extends React.Component{
     console.log(this.textInput.current.dataset.src);
     this.textInput.current.focus();
   }
-
+  
   render(){
     return(
       <div>
@@ -21,7 +22,6 @@ class Refs extends React.Component{
       </div>
     )
   }
-
 }
 
 export default Refs;
