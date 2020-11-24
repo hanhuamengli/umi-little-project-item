@@ -59,3 +59,18 @@
   opacity: .6;
   z-index: 9998;
 }
+.modal_wrapper{
+  animation: mask-move 200 linear ;
+}
+@keyframes mask-move{
+  0%{
+    right: 0;
+    top: 0;
+    width: 0;
+  }
+  100%{
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+}

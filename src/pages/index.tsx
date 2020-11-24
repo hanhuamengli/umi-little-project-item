@@ -5,7 +5,6 @@ import SelectDemo from './components/SelectDemo';
 import UploadDemo from './components/UploadDemo';
 import ModalDemo from './components/ModalDemo';
 
-
 // export default () => {
 //   return (
 //     <div>
@@ -16,6 +15,7 @@ import ModalDemo from './components/ModalDemo';
 //     </div>
 //   );
 // }
+
 class App extends React.Component<any,any>{
   constructor(props:any){
     super(props);
@@ -60,15 +60,17 @@ class App extends React.Component<any,any>{
         <ModalDemo
           visible={visible}
           title={title}
-          children={children}
+          //children={children}
           handleCancle={this.handleCancle}
           handleConfirm={this.handleConfirm}
           maskClick={this.maskClick}
-        ></ModalDemo>
+        >
+          <p>hhhh</p>
+          <p>hhhhh</p>
+        </ModalDemo>
       </div>
     )
   }
-  
 }
 
 export default App;
