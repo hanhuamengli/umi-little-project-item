@@ -4,6 +4,7 @@ import Refs from './components/Refs';
 import SelectDemo from './components/SelectDemo';
 import UploadDemo from './components/UploadDemo';
 import ModalDemo from './components/ModalDemo';
+import Rating from './components/Rating';
 
 // export default () => {
 //   return (
@@ -68,6 +69,8 @@ class App extends React.Component<any,any>{
           <p>hhhh</p>
           <p>hhhhh</p>
         </ModalDemo>
+
+        <Rating></Rating>
       </div>
     )
   }

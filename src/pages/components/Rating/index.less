@@ -1,0 +1,61 @@
+.box{
+  display: flex;
+  align-items: flex-start;
+  // width:100%;
+  // height:100px;
+  .rating_wrapper,.rating_wrapper:hover{
+  margin: 50px 20px;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  border-bottom: 70px solid red;
+  transform: rotate(35deg);
+  }
+
+  .rating_wrapper::before,.rating_wrapper:hover::before{
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  /*下面这条代码是必须的，表示在.star-five盒子之前插入一个非空的盒子*/
+  content: '';
+  transform: rotate(-35deg);
+  }
+
+  .rating_wrapper::after,.rating_wrapper:hover::after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  content: '';
+  transform: rotate(-70deg);
+
+  }
+
+  .rating_wrapper:hover{ 
+  color:yellow;
+  border-bottom: 70px solid yellow;
+  }
+  .rating_wrapper:hover::before{
+  border-bottom: 80px solid yellow;
+  }
+  .rating_wrapper:hover::after{
+  color: yellow;
+  border-bottom: 70px solid yellow;
+  }
+}
