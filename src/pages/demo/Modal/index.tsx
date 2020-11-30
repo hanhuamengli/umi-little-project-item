@@ -1,23 +1,7 @@
-import React, { Children } from 'react';
-import styles from './index.less';
-import Refs from './components/Refs';
-import SelectDemo from './components/SelectDemo';
-import UploadDemo from './components/UploadDemo';
-import ModalDemo from './components/ModalDemo';
-import Rating from './components/Rating';
+import React from 'react';
 
-// export default () => {
-//   return (
-//     <div>
-//       <Refs></Refs>
-//       <SelectDemo></SelectDemo>
-//       <UploadDemo></UploadDemo>
-//       <ModalDemo></ModalDemo>
-//     </div>
-//   );
-// }
-
-class App extends React.Component<any,any>{
+import ModalDemo from '@/components/ModalDemo';
+class Hello extends React.Component<any,any>{
   constructor(props:any){
     super(props);
 
@@ -54,9 +38,6 @@ class App extends React.Component<any,any>{
     const {visible,title,children} = this.state;
     return(
       <div>
-        <Refs></Refs>
-        <SelectDemo></SelectDemo>
-        <UploadDemo></UploadDemo>
         <button onClick={this.showModal}>点击弹框</button>
         <ModalDemo
           visible={visible}
@@ -69,11 +50,9 @@ class App extends React.Component<any,any>{
           <p>hhhh</p>
           <p>hhhhh</p>
         </ModalDemo>
-
-        <Rating></Rating>
       </div>
     )
   }
 }
 
-export default App;
+export default Hello;

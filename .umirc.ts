@@ -4,7 +4,8 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  routes: [
-    { path: '/', component: '@/pages/index' },
-  ],
+  //约定式路由无需配置routes
+  // routes: [
+  //   { path: '/', component: '@/layouts/index' },
+  // ],
 });
