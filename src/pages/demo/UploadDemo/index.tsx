@@ -41,13 +41,10 @@ class UploadDemo extends React.Component{
       <div className="upload_wrapper">
         <div className="upload_box">
           <Upload {...this.props}>
-          <Button icon={<UploadOutlined />}>点击上传</Button>
-        </Upload>
-        </div>
-        
-      </div>
-      
-          
+            <Button icon={<UploadOutlined />}>点击上传</Button>
+          </Upload>
+        </div>  
+      </div>     
     )
   }
 }

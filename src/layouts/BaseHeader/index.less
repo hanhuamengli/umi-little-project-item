@@ -1,4 +1,29 @@
 .header_wrapper{
-  
+  .header_box{
+    :global{
+      .ant-menu-horizontal > .ant-menu-item:hover,
+      .ant-menu-horizontal > .ant-menu-item-active,
+      .ant-menu-horizontal > .ant-menu-submenu .ant-menu-submenu-title:hover {
+        background-color: #000;
+        color: #f5b274;
+      }
+
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open{
+        color: #000;
+        border-bottom: none;
+      }
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+      .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected{
+        color : #000;
+        border-bottom: none;
+        font-weight: bold;
+      }
+      
+      //menu 下拉菜单样式
+    } 
+  }
 }
+
+
 

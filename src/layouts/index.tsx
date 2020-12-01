@@ -13,8 +13,9 @@ const { Header, Footer, Content } = Layout;
  * /layouts/index 会默认作为所有页面的容器
  */
 const bgc_style ={
-  backgroundColor: '#ff9f43',
-  height: '65px',
+  backgroundColor: '#f5b274',
+  height: '55px',
+  marginBottom: '6px',
 }
 export default function (props:any){
   return(
